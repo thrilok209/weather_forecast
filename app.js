@@ -12,7 +12,7 @@ $(document).ready(function () {
             document.getElementById("disname").innerHTML="Please enter the city name";
           }
 
-          var urlReq = 'https://api.openweathermap.org/data/2.5/weather?q='+cityName+'&appid=2fefb549a19a1115cae6f75ba75d652e'
+          var urlReq = 'http://api.openweathermap.org/data/2.5/weather?q='+cityName+'&appid=2fefb549a19a1115cae6f75ba75d652e'
           $.ajax({
             url: urlReq,
 
@@ -51,7 +51,7 @@ $(document).ready(function () {
                  $('#disname').show();
             }
              $('tbody#forecastdel>tr').remove();
-            var urlReq = 'https://api.openweathermap.org/data/2.5/forecast/daily?q='+cityName+'&appid=2fefb549a19a1115cae6f75ba75d652e&cnt='+dayS
+            var urlReq = 'http://api.openweathermap.org/data/2.5/forecast/daily?q='+cityName+'&appid=2fefb549a19a1115cae6f75ba75d652e&cnt='+dayS
             $.ajax({
               url: urlReq,
 
