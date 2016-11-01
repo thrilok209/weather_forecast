@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Weather</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="app.css" media="screen" title="no title">
+    <script   src="https://code.jquery.com/jquery-3.1.1.js"   integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="   crossorigin="anonymous"></script>
+    <script src="app.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <div class="col-xm-12 heading">
+      <h1>Weather App</h1>
+
+      <form class="form-inline">
+        <div class="form-group">
+          <label for="Cityname">Type City Name</label>
+          <input type="Text" class="form-control" id="Cityname" >
+        </div>
+        <div class="form-group">
+          <label for="foredays">select a number of days to forecast</label>
+          <input type="number"   min="0" max="15" id="foredays" >
+        </div>
+        <!-- <select class="form-control">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+        </select> -->
+     <div id="weathersub" class="btn btn-large sub" onclick="">Todays Weather</div>
+     <div id="forecastsub" class="btn btn-large sub" onclick="">Forecast</div>
+
+     <p id="disname"></p>
+     <div id="weatable">
+       <h2>Current Weather</h2>
+       <div class="container">
+         <table class="table">
+           <thead>
+             <tr>
+               <th>Date</th>
+               <th>Temperature</th>
+               <th>Humidity</th>
+               <th>Description</th>
+             </tr>
+           </thead>
+           <tbody id="weatherdel">
+
+           </tbody>
+         </table>
+       </div>
+      </div>
+      <div id="foretable">
+        <h2 id="nodays"></h2>
+        <div class="container">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Date</th>
+                <th>Max-Temperature</th>
+                <th>Min-Temperature</th>
+                <th>Humidity</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody id="forecastdel">
+
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+
+  </div>
+
+  </body>
+</html>

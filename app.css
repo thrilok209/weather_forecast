@@ -1,0 +1,17 @@
+.heading {
+  background: #9999ff;
+  height: 5em; }
+  .heading h1 {
+    line-height: 2em;
+    text-align: center; }
+  .heading form {
+    margin-left: 5em; }
+    .heading form #Cityname {
+      width: 20em; }
+  .heading p {
+    text-align: center;
+    font-size: 3em; }
+  .heading .sub {
+    background-color: #4d4dff; }
+
+/*# sourceMappingURL=app.css.map */

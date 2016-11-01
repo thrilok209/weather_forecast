@@ -1,0 +1,25 @@
+.heading{
+  background: lighten(blue, 30);
+
+  height: 5em;
+
+  h1{
+line-height: 2em;
+text-align: center;
+}
+
+form{
+  margin-left: 5em;
+  #Cityname{
+    width: 20em;
+
+  }
+}
+p{
+  text-align: center;
+  font-size: 3em;
+}
+.sub{
+  background-color: lighten(blue, 15);
+}
+}
